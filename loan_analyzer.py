@@ -123,24 +123,17 @@ loans = [
 ]
 
 # @TODO: Create an empty list called `inexpensive_loans`
-inexpensive_loans = []:
+inexpensive_loans = []
     
-
 # @TODO: Loop through all the loans and append any that cost $500 or less to the `inexpensive_loans` list
-for future_value in loans:
-    future_value = loans["future_value"]
-print(future_value)
-
-for remaining_months in loans:
-    remaining_months = loans["remaining_months"]
-print(remaining_months)
-
 for loan_price in loans:
-    loan_price = loans["loan_price"]
-print(loan_price)
-if present_value 
-# @TODO: Print the `inexpensive_loans` list
-# YOUR CODE HERE!
+    loan_price1 = loan_price["loan_price"]
+    if loan_price1 <= 500:
+        inexpensive_loans.append(loan)
+
+calculate_present_value(loans)
+# @TODO: Print the `inexpensive_loans` list'''
+print(inexpensive_loans)
 
 
 """Part 5: Save the results.
@@ -165,5 +158,5 @@ output_path = Path("inexpensive_loans.csv")
 
 # @TODO: Use the csv library and `csv.writer` to write the header row
 # and each row of `loan.values()` from the `inexpensive_loans` list.
-# YOUR CODE HERE!
+csvwriter.writerow(header)
  # save my changes
